@@ -31,7 +31,7 @@ export const userRouter = router({
       const { input } = req;
 
       const user: User = {
-        id: `${Math.random()}`,
+        id: `${Math.random()}`.slice(2),
         name: input.name,
       };
 
